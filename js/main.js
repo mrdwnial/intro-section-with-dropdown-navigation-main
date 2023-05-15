@@ -28,7 +28,15 @@ function changeMenuStatus(){
 screenDarken.addEventListener("click", function(){
   changeMenuStatus()
 })
-// screenDarken.nextElementSibling
 function toggleDropdown(menu_item){
-  menu_item.nextElementSibling.nextElementSibling.classList.toggle("d-none")
+  let dropdownUl = menu_item.nextElementSibling.nextElementSibling
+  let svg_path = menu_item.nextElementSibling.firstElementChild
+
+  dropdownUl.classList.toggle("d-none");
+
+  if(dropdownUl.classList.contains("d-none")){
+    svg_path.setAttribute("d", "m1 1 4 4 4-4")
+  }else{
+    svg_path.setAttribute("d", "m1 5 4-4 4 4")
+  }
 }
