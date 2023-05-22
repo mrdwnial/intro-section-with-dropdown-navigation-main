@@ -238,6 +238,7 @@ nav .desktop-navBar ul {
   padding: 1.3em 0;
   padding-left: 1em;
   margin: 0;
+  z-index: 999;
 }
 nav .desktop-navBar ul li {
   position: relative;
@@ -250,6 +251,7 @@ nav .desktop-navBar ul li span {
   font-size: 0.9rem;
   font-weight: bold;
   color: var(--Medium-Gray);
+  transition: 0.2s;
 }
 
 nav .desktop-navBar ul li span:hover,
@@ -319,6 +321,7 @@ nav .desktop-navBar .desktop-nav-btn-container button {
   font-size: 0.9rem;
   font-weight: bold;
   color: var(--Medium-Gray);
+  transition: 0.2s;
 }
 nav .desktop-navBar .desktop-nav-btn-container button:nth-child(2) {
   border: 2px solid var(--Medium-Gray);
@@ -333,16 +336,15 @@ nav .desktop-navBar .desktop-nav-btn-container button:nth-child(2):active {
   border: 2px solid var(--Almost-Black);
 }
 .main-page-container main {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 34em;
 }
 
 .main-page-container main .main-details {
-  /* padding-top: 5em; */
-  /* text-align: left; */
-  /* margin-left: 3em; */
-  /* margin-top: 5em !important; */
+  height: 100%;
 }
 .main-page-container main .main-details span {
   font-size: 2.2em;
@@ -364,6 +366,8 @@ nav .desktop-navBar .desktop-nav-btn-container button:nth-child(2):active {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-align: center;
+  user-select: none;
+  transition: 0.2s;
 }
 
 .main-page-container main .main-details button:hover,
@@ -372,21 +376,15 @@ nav .desktop-navBar .desktop-nav-btn-container button:nth-child(2):active {
   background-color: var(--Almost-White);
 }
 
-.main-page-container main .logo-container {
-  /* margin-top: 2em; */
-  /* position: relative; */
-}
 .main-page-container main .logo-container svg {
   transform: scale(0.7);
-}
-.main-page-container main .logo-container svg path {
 }
 
 .main-page-container main .desktop-hero-image {
   margin-left: 1em;
 }
 .main-page-container main .main-details .desktop-main-title {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 @keyframes openMenu {
