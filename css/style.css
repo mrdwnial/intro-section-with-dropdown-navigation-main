@@ -387,6 +387,11 @@ nav .desktop-navBar .desktop-nav-btn-container button:nth-child(2):active {
   font-size: 4rem;
 }
 
+
+.footer-content{
+  margin: 7em 0;
+}
+
 @keyframes openMenu {
   from {
     width: 0;
