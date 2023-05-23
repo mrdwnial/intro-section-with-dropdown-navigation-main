@@ -131,6 +131,7 @@ nav .mobile-navBar .change .bar3 {
   letter-spacing: 1px;
   padding-right: 0.6rem;
   font-weight: bold;
+  user-select: none;
 }
 .mobile-menu-container ul li svg {
   position: absolute;
